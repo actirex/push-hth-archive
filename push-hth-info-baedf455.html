@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>华体会 · 稳定入口与页面说明</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #fcfcfa;
+      color: #1d1d1f;
+      font-family: system-ui, -apple-system, 'Helvetica Neue', 'Segoe UI', Roboto, 'Noto Sans', sans-serif;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 4rem;
+    }
+
+    /* hero */
+    .hero {
+      text-align: center;
+      padding: 2.8rem 0 2rem;
+      border-bottom: 1px solid #eae8e3;
+    }
+
+    .hero h1 {
+      font-size: 2.6rem;
+      font-weight: 550;
+      letter-spacing: -0.02em;
+      color: #2b2b28;
+      margin-bottom: 0.8rem;
+    }
+
+    .hero .sub {
+      font-size: 1.1rem;
+      color: #5f5f5c;
+      max-width: 520px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .hero a {
+      color: #2b6a4a;
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1px solid #bdd8c5;
+      transition: border-color 0.2s;
+    }
+
+    .hero a:hover {
+      border-bottom-color: #2b6a4a;
+    }
+
+    /* 通用 section */
+    section {
+      margin: 3rem 0;
+    }
+
+    section h2 {
+      font-size: 1.6rem;
+      font-weight: 520;
+      margin-bottom: 1.25rem;
+      letter-spacing: -0.01em;
+      color: #2b2b28;
+    }
+
+    section p {
+      margin-bottom: 1.1rem;
+      color: #3b3b38;
+    }
+
+    .small-meta {
+      font-size: 0.9rem;
+      color: #7a7a75;
+      margin-top: 0.4rem;
+    }
+
+    /* 优势卡片网格 */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1.2rem;
+      margin: 1.6rem 0 0.4rem;
+    }
+
+    .card {
+      background: #f6f5f1;
+      padding: 1.2rem 1rem;
+      border-radius: 14px;
+      transition: background 0.18s;
+    }
+
+    .card:hover {
+      background: #efede7;
+    }
+
+    .card h3 {
+      font-size: 1.05rem;
+      font-weight: 510;
+      margin-bottom: 0.35rem;
+      color: #2b2b28;
+    }
+
+    .card p {
+      font-size: 0.93rem;
+      color: #4d4d49;
+      margin-bottom: 0;
+      line-height: 1.5;
+    }
+
+    /* 说明区 — 窄内联 */
+    .note-block {
+      background: #f8f7f4;
+      border-left: 3px solid #b7c9bb;
+      padding: 1.2rem 1.5rem;
+      border-radius: 0 12px 12px 0;
+      margin: 2rem 0;
+    }
+
+    .note-block p {
+      margin-bottom: 0.5rem;
+    }
+
+    .note-block p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* FAQ 摘要 */
+    .faq-item {
+      padding: 0.9rem 0;
+      border-bottom: 1px solid #eae8e3;
+    }
+
+    .faq-item:last-of-type {
+      border-bottom: none;
+    }
+
+    .faq-q {
+      font-weight: 520;
+      color: #2b2b28;
+      margin-bottom: 0.2rem;
+      font-size: 1.02rem;
+    }
+
+    .faq-a {
+      color: #4d4d49;
+      font-size: 0.97rem;
+    }
+
+    .faq-a a {
+      color: #2b6a4a;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 1px;
+      text-decoration-color: #b7d0be;
+    }
+
+    .faq-a a:hover {
+      text-decoration-color: #2b6a4a;
+    }
+
+    /* 底部链接区域 */
+    .footer-links {
+      margin-top: 3.6rem;
+      padding-top: 1.8rem;
+      border-top: 1px solid #e0ded8;
+      text-align: center;
+      font-size: 0.95rem;
+      color: #6b6b66;
+    }
+
+    .footer-links a {
+      color: #2b6a4a;
+      text-decoration: none;
+      border-bottom: 1px solid #cbd9ce;
+      margin: 0 0.2rem;
+      transition: border-color 0.2s;
+    }
+
+    .footer-links a:hover {
+      border-bottom-color: #2b6a4a;
+    }
+
+    .footer-links .sep {
+      margin: 0 0.6rem;
+      color: #c0bfb8;
+    }
+
+    .footer-note {
+      margin-top: 1.2rem;
+      font-size: 0.85rem;
+      color: #8b8b85;
+    }
+
+    /* responsive */
+    @media (max-width: 480px) {
+      .page {
+        padding: 2rem 1rem 3rem;
+      }
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .hero .sub {
+        font-size: 1rem;
+      }
+      section h2 {
+        font-size: 1.35rem;
+      }
+      .card-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- hero -->
+  <header class="hero">
+    <h1>华体会</h1>
+    <p class="sub">
+      一个保持节奏的稳定入口 —— 日常浏览、信息获取、页面直达，都讲究清爽直接。
+      了解 <a href="https://push-hth.com.cn">华体会</a> 带来的连贯体验。
+    </p>
+  </header>
+
+  <!-- 优势区 -->
+  <section>
+    <h2>为什么这个入口值得留意</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>稳定优先</h3>
+        <p>结构可靠，访问路径经过持续优化，减少不必要的跳转与等待。</p>
+      </div>
+      <div class="card">
+        <h3>页面说明清晰</h3>
+        <p>每个模块都有明确指向，内容层级分明，不被冗余信息干扰。</p>
+      </div>
+      <div class="card">
+        <h3>适配日常场景</h3>
+        <p>无论是手机还是桌面，排版与交互都保持一致的轻量和可读性。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 说明区：从稳定入口和页面说明的角度展开 -->
+  <section>
+    <h2>关于入口与信息结构</h2>
+    <p>
+      一个可靠的入口能节省很多确认时间。<a href="https://push-hth.com.cn">华体会</a> 在页面组织上采用了扁平化的方式：
+      主要功能区域直接展示，不需要多层菜单才能到达。同时每个页面都带有清晰的标题层级，
+      无论是快速浏览还是仔细阅读，都能找到自己需要的内容。
+    </p>
+    <p>
+      我们留意到很多站点喜欢用复杂的动效和密集的按钮，但实际使用中，
+      稳定、直接、少干扰才是多数人的长期需求。因此页面设计尽量留白，
+      文字间距和行高也都经过调整，让视线可以自然流动。
+    </p>
+    <div class="note-block">
+      <p><strong>一点个人化的观察：</strong> 如果你经常需要同时打开多个标签页，
+      或者希望减少重复查找的时间，一个入口干净、说明到位的页面会很有帮助。
+      <a href="https://push-hth.com.cn">华体会</a> 就是朝这个方向做的尝试。
+      </p>
+    </div>
+  </section>
+
+  <!-- FAQ 摘要 -->
+  <section>
+    <h2>常见问题 · 摘要</h2>
+
+    <div class="faq-item">
+      <div class="faq-q">这个入口主要用来做什么？</div>
+      <div class="faq-a">提供一个清晰的起点，方便快速进入相关页面，同时保持信息结构可预期。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">页面说明会不会太简略？</div>
+      <div class="faq-a">不会。每个模块都配有标题和描述，复杂部分还有补充说明。
+      如果需要进一步了解，可以随时参考 <a href="https://push-hth.com.cn">华体会</a> 上的具体页面。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">移动端打开体验如何？</div>
+      <div class="faq-a">完全适配。文字大小、间距、卡片布局都会根据屏幕自动调整，
+      不会出现按钮过小或排版错位的情况。</div>
+    </div>
+  </section>
+
+  <!-- 底部链接 -->
+  <footer class="footer-links">
+    <span><a href="https://push-hth.com.cn">华体会</a></span>
+    <span class="sep">·</span>
+    <span>页面说明</span>
+    <span class="sep">·</span>
+    <span>稳定入口</span>
+    <div class="footer-note">
+      日常使用中保持简单直接，就是最好的体验。
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
