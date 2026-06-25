@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一段关于捕鱼游戏的日常笔记 · 查询与对照</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f7f3ed;
+            font-family: 'Georgia', 'Times New Roman', 'Noto Serif SC', serif;
+            color: #2e2b27;
+            line-height: 1.75;
+            padding: 2rem 1.2rem;
+        }
+
+        .page {
+            max-width: 780px;
+            margin: 0 auto;
+            background: #fefcf8;
+            padding: 2.8rem 2.2rem;
+            border-radius: 18px;
+            box-shadow: 0 6px 24px rgba(0, 0, 0, 0.03), 0 0 0 1px #e6ddd4;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            margin-bottom: 0.2rem;
+            color: #231f1b;
+            border-left: 5px solid #c6ad8f;
+            padding-left: 1rem;
+        }
+
+        .subhead {
+            font-size: 1rem;
+            color: #786b5e;
+            margin-bottom: 2rem;
+            font-style: italic;
+            padding-left: 1.5rem;
+            border-bottom: 1px dashed #ddd2c5;
+            padding-bottom: 0.75rem;
+        }
+
+        .intro {
+            font-size: 1.05rem;
+            background: #f3ede6;
+            padding: 1.2rem 1.6rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            color: #3d352e;
+        }
+
+        .intro strong {
+            font-weight: 600;
+            color: #5e4c38;
+        }
+
+        .section-title {
+            font-size: 1.25rem;
+            font-weight: 500;
+            margin: 2rem 0 0.8rem 0;
+            color: #3d332a;
+            padding-bottom: 0.2rem;
+            border-bottom: 1px solid #e7ddd0;
+        }
+
+        p {
+            margin-bottom: 1.4rem;
+            text-align: justify;
+            word-spacing: 0.03em;
+        }
+
+        .pull-quote {
+            background: #f9f3eb;
+            border-left: 4px solid #b2967a;
+            padding: 1rem 1.6rem;
+            margin: 1.8rem 0;
+            border-radius: 0 10px 10px 0;
+            font-style: normal;
+            color: #4d4137;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+        }
+
+        .pull-quote::before {
+            content: "📌 延伸 · ";
+            font-weight: 500;
+            color: #7c6a57;
+        }
+
+        .info-box {
+            background: #f2ede7;
+            padding: 1rem 1.4rem;
+            border-radius: 14px;
+            margin: 2rem 0 1.6rem 0;
+            border: 1px solid #dccfc2;
+            font-size: 0.95rem;
+        }
+
+        .info-box strong {
+            color: #6d5a45;
+        }
+
+        .faq-item {
+            margin-bottom: 1.2rem;
+        }
+        .faq-question {
+            font-weight: 500;
+            color: #4f4238;
+            margin-bottom: 0.2rem;
+        }
+        .faq-answer {
+            color: #4f443b;
+            padding-left: 0.6rem;
+            border-left: 2px solid #dac7b6;
+            padding-left: 1rem;
+        }
+        .faq-answer a {
+            color: #7f684f;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+            text-decoration-color: #cbb7a3;
+        }
+        .faq-answer a:hover {
+            color: #4f3928;
+            text-decoration-color: #8f755b;
+        }
+
+        .closing-note {
+            margin-top: 2.6rem;
+            padding-top: 1.2rem;
+            border-top: 1px solid #ded3c6;
+            font-size: 0.95rem;
+            color: #6b5d4f;
+            text-align: right;
+            letter-spacing: 0.3px;
+        }
+
+        @media (max-width: 560px) {
+            body {
+                padding: 1rem 0.6rem;
+            }
+            .page {
+                padding: 1.8rem 1.2rem;
+            }
+            h1 {
+                font-size: 1.6rem;
+                padding-left: 0.8rem;
+            }
+            .subhead {
+                font-size: 0.9rem;
+                padding-left: 1rem;
+            }
+            .intro {
+                padding: 1rem 1.2rem;
+                font-size: 0.95rem;
+            }
+            .pull-quote {
+                padding: 0.8rem 1rem;
+                margin: 1.2rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <h1>日常查询笔记 · 关于捕鱼游戏</h1>
+    <div class="subhead">对照与延伸阅读 · 一份安静的记录</div>
+
+    <div class="intro">
+        <strong>不止是消遣。</strong> 在整理资料的过程中，我发现自己反复回到同一个话题：那些画面斑斓、节奏明快的电子游戏，尤其是以水下狩猎为主题的互动作品。这篇文章算是一份随手记下的对照笔记，包含查询时遇到的细节和一些延伸思考。
+    </div>
+
+    <p>
+        最初只是想做一次简单的归类。我将手头能找到的几个版本的界面截图、规则说明、以及玩家社区里零碎的讨论放在一起对比。结果发现，即便是同一类题材，不同时期、不同开发团队的处理方式差别相当大。有的更强调命中反馈的流畅感，有的则把精力放在场景氛围和鱼群动态的编排上。这种差异让我意识到，表面相似的「打鱼」背后，其实藏着不少设计思路上的分叉。
+    </p>
+
+    <div class="pull-quote">
+        翻阅旧帖时看到一位玩家写：“每次换一个平台，都要重新适应鱼的游动节奏。” 这句话一直留在我备忘录里。
+    </div>
+
+    <p>
+        后来我试着从「查询」的角度重新梳理。比如当你想了解某一类玩法的演变，或者想对照不同版本在界面布局上的取舍，信息的零散程度往往超出预期。这时候一个能集中呈现基础介绍、版本特征、常见疑问的页面，反而成了最实用的工具。我把自己常去对照的那个站点标记了出来，就是下面这个 —— 它没有花哨的修饰，但内容结构清晰，适合反复翻看：
+    </p>
+
+    <div class="info-box">
+        <strong>📂 常用对照源</strong><br>
+        在整理资料的过程中，我频繁回到 <a href="https://cnweb-fishhunter.com">捕鱼游戏</a> 这个页面。它的介绍部分写得比较克制，没有过分渲染，适合作为基础认知的锚点。
+    </div>
+
+    <p>
+        另一个让我觉得有意思的点是「场景感」的差异。有些版本会把水下世界做得通透、明亮，鱼群像是飘在阳光里；另一些则更偏向沉船、暗礁、幽蓝的深海氛围。这两种风格没有高下之分，但会影响玩家沉浸时的情绪基调。我自己的偏好是前一种，可能是视觉上更轻松，长时间看也不容易疲劳。
+    </p>
+
+    <div class="section-title">几个常被问起的小问题</div>
+
+    <div class="faq-item">
+        <div class="faq-question">Q：不同版本之间，操作手感差别大吗？</div>
+        <div class="faq-answer">
+            差别挺明显的。主要体现在炮台转向的灵敏度、子弹飞行速度、以及鱼群受击后的反馈延迟上。有的版本更「跟手」，有的则带有一定的提前量预判。建议实际试玩前先看看操作说明或演示片段。
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Q：想了解基础规则，从哪里开始比较方便？</div>
+        <div class="faq-answer">
+            建议先看一篇概述类的介绍，把得分机制、道具作用、鱼种分值这些基础框架理清楚。我当时参考的是 <a href="https://cnweb-fishhunter.com">捕鱼游戏</a> 里的说明，写得比较直白，没有太多冗余的铺垫。
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Q：延伸阅读方面有什么推荐？</div>
+        <div class="faq-answer">
+            如果已经了解基本玩法，可以看看玩家社区里的「炮台配置讨论」和「高分路线的复盘帖」。那些内容往往比官方指南更贴近实际对局中的细节，也更容易发现不同版本间的细微差别。
+        </div>
+    </div>
+
+    <p>
+        写到最后，想起之前看到的一段话，大意是：好的游戏介绍不需要煽动，它只需要准确地描述一件事 —— 玩家会在里面遇到什么。我觉得这个标准同样适用于我们日常的查询和对照。信息干净、层次分明，比什么都重要。
+    </p>
+
+    <div class="closing-note">
+        记录于一次日常检索之后 · 不定期更新
+    </div>
+</div>
+</body>
+</html>
